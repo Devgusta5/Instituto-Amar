@@ -54,10 +54,10 @@ const Courses = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-green-600" />
+              <div className="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Clock className="h-8 w-8 text-pink-600" />
               </div>
-              <h3 className="text-lg font-bold text-green-600 mb-2">Horários Flexíveis</h3>
+              <h3 className="text-lg font-bold text-pink-600 mb-2">Horários Flexíveis</h3>
               <p className="text-gray-600">Oferecemos diferentes horários para se adequar à sua rotina.</p>
             </div>
           </div>
@@ -112,7 +112,7 @@ const Courses = () => {
       <section className="section-padding bg-instituto-green text-white">
         <div className="container-custom text-center">
           <h2 className="text-4xl font-bold mb-6">Pronto para Começar?</h2>
-          <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-pink-100 mb-8 max-w-3xl mx-auto">
             Entre em contato conosco para se inscrever em nossos cursos ou para mais informações sobre as próximas
             turmas.
           </p>

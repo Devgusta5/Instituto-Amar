@@ -71,9 +71,10 @@ module.exports = {
         },
 
         // Cores personalizadas do Instituto
-        "instituto-green": { DEFAULT: "#1a5f3f" },
-        "instituto-red": { DEFAULT: "#8b1538" },
-        "instituto-gold": { DEFAULT: "#d4af37" },
+        "instituto-green": { DEFAULT: "#e75480" }, // rosa vibrante
+        "instituto-red": { DEFAULT: "#ff69b4" },   // rosa claro
+        "instituto-gold": { DEFAULT: "#ffc0cb" },  // rosa pastel
+        "instituto-niggus": { DEFAULT: "#000000" },  // preto 
       },
       borderRadius: {
         lg: "var(--radius)",

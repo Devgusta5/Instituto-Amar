@@ -70,7 +70,7 @@ const Contact = () => {
       icon: Clock,
       title: "Horário",
       details: ["Segunda a Sexta: 8h às 17h", "Sábados: 8h às 12h"],
-      color: "text-green-600",
+      color: "text-pink-600",
     },
   ]
 
@@ -273,7 +273,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"
                   >
-                    <div className="bg-green-500 rounded-full p-2">
+                    <div className="bg-pink-500 rounded-full p-2">
                       <MessageSquare className="h-5 w-5 text-white" />
                     </div>
                     <div>
@@ -305,7 +305,7 @@ const Contact = () => {
       <section className="section-padding bg-instituto-green text-white">
         <div className="container-custom text-center">
           <h2 className="text-4xl font-bold mb-6">Faça Parte da Nossa Família</h2>
-          <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-pink-100 mb-8 max-w-3xl mx-auto">
             Seja como voluntário, doador ou parceiro, há sempre uma forma de contribuir com nossa missão de transformar
             vidas.
           </p>

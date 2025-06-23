@@ -30,7 +30,7 @@ const Events = () => {
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Nossos Eventos</h1>
-            <p className="text-xl md:text-2xl text-green-100 leading-relaxed">
+            <p className="text-xl md:text-2xl text-pink-100 leading-relaxed">
               Acompanhe todos os eventos que realizamos para transformar vidas e fortalecer nossa comunidade em
               Mongaguá.
             </p>
