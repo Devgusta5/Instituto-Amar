@@ -22,6 +22,8 @@ const HeroSection = () => {
             </p>
           </div>
 
+          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/doacao" className="btn-accent text-lg px-8 py-4 flex items-center space-x-2">
               <Heart className="h-5 w-5" />

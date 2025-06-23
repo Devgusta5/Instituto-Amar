@@ -1,3 +1,5 @@
+import './index.css';
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -106,6 +108,6 @@ module.exports = {
     },
   },
   plugins: [
-    // ...plugin removido para evitar erro de módulo não encontrado...
+    require("tailwindcss-animate"),
   ],
 };
