@@ -11,15 +11,15 @@ const GallerySection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-instituto-green mb-6">Nossa Galeria</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Veja alguns momentos especiais dos nossos eventos, cursos e atividades diárias.
+            Veja alguns momentos especiais dos nossos eventos, cursos e atividades diárias. 
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {featuredImages.map((image, index) => (
             <div
               key={image.id}
-              className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 animate-scale-in"
+              className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 animate-scale-in w-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img

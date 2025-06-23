@@ -90,7 +90,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
       {/* Stats */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
@@ -100,11 +99,10 @@ const About = () => {
               Cada número representa vidas transformadas e sonhos realizados.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full">
                   <div className="bg-instituto-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                     <stat.icon className="h-8 w-8 text-instituto-green" />
                   </div>
@@ -116,7 +114,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
       {/* Timeline */}
       <section className="section-padding bg-white">
         <div className="container-custom">
@@ -126,30 +123,26 @@ const About = () => {
               Conheça os marcos importantes da nossa jornada de transformação social.
             </p>
           </div>
-
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-instituto-green/20"></div>
-
             {timeline.map((item, index) => (
               <div
                 key={index}
-                className={`relative flex items-center mb-12 ${index % 2 === 0 ? "justify-start" : "justify-end"}`}
+                className={`relative flex flex-col sm:flex-row items-center mb-12 ${index % 2 === 0 ? "justify-start" : "justify-end"}`}
               >
-                <div className={`w-full max-w-md ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}>
+                <div className={`w-full max-w-md ${index % 2 === 0 ? "sm:pr-8 text-right" : "sm:pl-8 text-left"}`}>
                   <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <div className="text-2xl font-bold text-instituto-gold mb-2">{item.year}</div>
                     <h4 className="text-xl font-bold text-instituto-green mb-3">{item.title}</h4>
                     <p className="text-gray-600">{item.description}</p>
                   </div>
                 </div>
-
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-instituto-green rounded-full border-4 border-white shadow-lg"></div>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* Location */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
@@ -183,7 +176,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-
             <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center">
               <div className="text-center text-gray-600">
                 <MapPin className="h-12 w-12 mx-auto mb-4" />

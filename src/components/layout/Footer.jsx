@@ -7,14 +7,14 @@ const Footer = () => {
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col items-start">
             <div className="flex items-center space-x-2">
               <div className="bg-white p-2 rounded-lg">
                 <Heart className="h-6 w-6 text-instituto-green" />
               </div>
               <span className="text-xl font-bold">Instituto Amar</span>
             </div>
-            <p className="text-green-100">Transformando vidas através do amor e solidariedade em Mongaguá.</p>
+            <p className="text-green-100 max-w-xs">Transformando vidas através do amor e solidariedade em Mongaguá.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-green-100 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
@@ -109,9 +109,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-green-700 mt-8 pt-8 text-center">
-          <p className="text-green-100 text-sm">
+          <p className="text-green-100 text-sm break-words">
             © 2024 Instituto Amar. Todos os direitos reservados. |
-            <span className="ml-1">Desenvolvido com ❤️ para transformar vidas</span>
+            <span className="ml-1 block sm:inline">Desenvolvido com ❤️ para transformar vidas</span>
           </p>
         </div>
       </div>

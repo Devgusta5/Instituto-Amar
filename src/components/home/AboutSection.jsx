@@ -72,7 +72,7 @@ const AboutSection = () => {
           {values.map((value, index) => (
             <div
               key={index}
-              className="card p-6 text-center animate-scale-in"
+              className="card p-6 text-center animate-scale-in w-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="bg-instituto-green/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">

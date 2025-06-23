@@ -5,7 +5,7 @@ const FounderSection = () => {
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative">
+          <div className="relative w-full">
             <img
               src="/placeholder.svg?height=500&width=400"
               alt="Vanessa Almeida - Fundadora"

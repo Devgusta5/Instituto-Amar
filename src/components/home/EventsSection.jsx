@@ -15,9 +15,9 @@ const EventsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {recentEvents.map((event, index) => (
-            <div key={event.id} className="card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <div key={event.id} className="card animate-scale-in w-full" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="relative">
                 <img src={event.image || "/placeholder.svg"} alt={event.title} className="w-full h-48 object-cover" />
                 <div className="absolute top-4 left-4 bg-instituto-green text-white px-3 py-1 rounded-full text-sm font-semibold">

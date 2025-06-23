@@ -67,16 +67,15 @@ const Navbar = () => {
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
-
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden mt-4 pb-4 w-full">
+            <div className="flex flex-col space-y-4 w-full">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`font-medium transition-colors duration-200 ${
+                  className={`font-medium transition-colors duration-200 px-4 py-2 ${
                     location.pathname === item.path
                       ? "text-instituto-green"
                       : "text-gray-700 hover:text-instituto-green"
@@ -86,7 +85,7 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link to="/doacao" className="btn-primary inline-block text-center" onClick={() => setIsOpen(false)}>
+              <Link to="/doacao" className="btn-primary inline-block text-center w-full" onClick={() => setIsOpen(false)}>
                 Doe Agora
               </Link>
             </div>
@@ -98,3 +97,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

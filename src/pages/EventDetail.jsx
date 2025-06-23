@@ -142,17 +142,16 @@ const EventDetail = () => {
           </div>
         </div>
       </section>
-
       {/* Related Events */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold text-instituto-green mb-8 text-center">Outros Eventos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {events
               .filter((e) => e.id !== event.id)
               .slice(0, 3)
               .map((relatedEvent) => (
-                <div key={relatedEvent.id} className="card">
+                <div key={relatedEvent.id} className="card w-full">
                   <div className="relative">
                     <img
                       src={relatedEvent.image || "/placeholder.svg"}
@@ -184,3 +183,4 @@ const EventDetail = () => {
 }
 
 export default EventDetail
+

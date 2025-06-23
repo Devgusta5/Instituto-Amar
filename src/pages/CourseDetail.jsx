@@ -164,17 +164,16 @@ const CourseDetail = () => {
           </div>
         </div>
       </section>
-
       {/* Related Courses */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold text-instituto-green mb-8 text-center">Outros Cursos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {courses
               .filter((c) => c.id !== course.id)
               .slice(0, 3)
               .map((relatedCourse) => (
-                <div key={relatedCourse.id} className="card">
+                <div key={relatedCourse.id} className="card w-full">
                   <div className="relative">
                     <img
                       src={relatedCourse.image || "/placeholder.svg"}
@@ -206,3 +205,4 @@ const CourseDetail = () => {
 }
 
 export default CourseDetail
+

@@ -86,7 +86,7 @@ const Gallery = () => {
               {filteredImages.map((image, index) => (
                 <div
                   key={image.id}
-                  className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer animate-scale-in"
+                  className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer animate-scale-in w-full"
                   style={{ animationDelay: `${index * 0.05}s` }}
                   onClick={() => openLightbox(image)}
                 >
@@ -124,7 +124,7 @@ const Gallery = () => {
             <h2 className="text-4xl font-bold text-instituto-green mb-6">Nossa Galeria em Números</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-3xl font-bold text-instituto-green mb-2">
                 {galleryImages.length}+

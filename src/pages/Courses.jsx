@@ -63,13 +63,12 @@ const Courses = () => {
           </div>
         </div>
       </section>
-
       {/* Courses Grid */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {courses.map((course, index) => (
-              <div key={course.id} className="card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div key={course.id} className="card animate-scale-in w-full" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="relative">
                   <img
                     src={course.image || "/placeholder.svg"}
@@ -137,3 +136,4 @@ const Courses = () => {
 }
 
 export default Courses
+

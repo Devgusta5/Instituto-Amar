@@ -88,9 +88,9 @@ const Events = () => {
               <p className="text-gray-500">Não há eventos para o filtro selecionado no momento.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {getFilteredEvents().map((event, index) => (
-                <div key={event.id} className="card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div key={event.id} className="card animate-scale-in w-full" style={{ animationDelay: `${index * 0.1}s` }}>
                   <div className="relative">
                     <img
                       src={event.image || "/placeholder.svg"}
