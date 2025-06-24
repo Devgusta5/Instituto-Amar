@@ -1,9 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { MapPin, Phone, Mail, Clock, Send, User, MessageSquare, Heart, CheckCircle } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Send, User, MessageSquare, Heart, CheckCircle } from "lucide-react"
+import emailjs from 'emailjs-com';
 
-const Contact = () => {
+const Donation = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,28 +24,41 @@ const Contact = () => {
     }))
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    // Simular envio do formulário
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-        volunteer: false,
-      })
-    }, 3000)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    emailjs.send(
+      'service_m2pks35',
+      'template_sjslxrs',
+      {
+        user_name: formData.name,
+        user_email: formData.email,
+        user_phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message,
+        volunteer: formData.volunteer ? 'Sim' : 'Não',
+      },
+      'pEC4qrpm67z0Hpsa9'
+    ).then(
+      (result) => {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+          volunteer: false,
+        });
+        setTimeout(() => setIsSubmitted(false), 3000);
+      },
+      (error) => {
+        alert('Ocorreu um erro. Tente novamente!');
+        setIsSubmitting(false);
+      }
+    );
   }
 
   const contactInfo = [
@@ -189,13 +203,13 @@ const Contact = () => {
                         className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-instituto-green focus:border-transparent transition-colors"
                       >
                         <option value="">Selecione um assunto</option>
-                        <option value="duvidas">Dúvidas Gerais</option>
-                        <option value="voluntario">Quero ser Voluntário</option>
-                        <option value="doacao">Doações</option>
-                        <option value="parceria">Parcerias</option>
-                        <option value="cursos">Cursos</option>
-                        <option value="eventos">Eventos</option>
-                        <option value="outros">Outros</option>
+                        <option value="Dúvidas Gerais">Dúvidas Gerais</option>
+                        <option value="Quero ser Voluntário">Quero ser Voluntário</option>
+                        <option value="Doações">Doações</option>
+                        <option value="Parcerias">Parcerias</option>
+                        <option value="Cursos">Cursos</option>
+                        <option value="Eventos">Eventos</option>
+                        <option value="Outros">Outros</option>
                       </select>
                     </div>
                   </div>
@@ -255,12 +269,17 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold text-instituto-green mb-8">Nossa Localização</h2>
-                <div className="bg-gray-300 rounded-2xl h-64 flex items-center justify-center mb-6">
-                  <div className="text-center text-gray-600">
-                    <MapPin className="h-12 w-12 mx-auto mb-4" />
-                    <p className="font-semibold">Mapa Interativo</p>
-                    <p className="text-sm">Rua das Flores, 123 - Mongaguá/SP</p>
-                  </div>
+                <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center mb-6">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.0783775024915!2d-46.69678542389731!3d-24.133885482876767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce29d9d09031b1%3A0xa407d6bffe84280c!2sInstituto%20(A)mar!5e0!3m2!1spt-BR!2sbr!4v1750785938971!5m2!1spt-BR!2sbr"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0, borderRadius: "1rem", minHeight: "300px" }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Mapa Instituto Amar"
+                  ></iframe>
                 </div>
               </div>
 
@@ -333,4 +352,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Donation

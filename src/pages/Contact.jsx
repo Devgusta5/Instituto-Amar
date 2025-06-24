@@ -54,6 +54,7 @@ export default function Contact() {
           message: '',
           volunteer: false,
         });
+        setTimeout(() => setIsSubmitted(false), 3000);
       },
       (error) => {
         console.log(error.text);
@@ -136,14 +137,16 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
             <div>
-      <h2 className="text-3xl font-bold text-instituto-green mb-8">Envie uma Mensagem</h2>
-
-      {isSubmitted ? (
-        <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
-          <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold text-green-800 mb-2">Mensagem Enviada!</h3>
-          <p className="text-green-600">Obrigado pelo seu contato. Responderemos em breve!</p>
-        </div>
+              <h2 className="text-3xl font-bold text-instituto-green mb-8">Envie uma Mensagem</h2>
+              
+              {isSubmitted ? (
+                <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
+                  <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold text-green-800 mb-2">Mensagem Enviada!</h3>
+                  <p className="text-green-600">
+                    Obrigado pelo seu contato. Responderemos em breve!
+                  </p>
+                </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
