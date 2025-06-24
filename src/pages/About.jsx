@@ -177,11 +177,16 @@ const About = () => {
               </div>
             </div>
             <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center">
-              <div className="text-center text-gray-600">
-                <MapPin className="h-12 w-12 mx-auto mb-4" />
-                <p>Mapa interativo será carregado aqui</p>
-                <p className="text-sm mt-2">Mongaguá - SP</p>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.0783775024915!2d-46.69678542389731!3d-24.133885482876767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce29d9d09031b1%3A0xa407d6bffe84280c!2sInstituto%20(A)mar!5e0!3m2!1spt-BR!2sbr!4v1750785938971!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0, borderRadius: "1rem", minHeight: "300px" }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mapa Instituto Amar"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -191,3 +196,4 @@ const About = () => {
 }
 
 export default About
+
