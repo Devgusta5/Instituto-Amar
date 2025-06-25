@@ -52,7 +52,7 @@ const DonationSection = () => {
                 to="/doacao"
                 className={`block w-full text-center py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
                   plan.popular
-                    ? "bg-instituto-gold hover:bg-yellow-600 text-white"
+                    ? "bg-instituto-gold hover:bg-green-600 text-white"
                     : "bg-instituto-green hover:bg-green-800 text-white"
                 }`}
               >
@@ -63,10 +63,13 @@ const DonationSection = () => {
         </div>
 
         <div className="text-center">
-          <Link to="/doacao" className="btn-accent text-lg px-8 py-4 inline-flex items-center space-x-2">
-            <Heart className="h-5 w-5" />
-            <span>Ver Todas as Opções de Doação</span>
-          </Link>
+          <Link
+  to="/doacao"
+  className="bg-pink-100 hover:bg-instituto-green text-instituto-green hover:text-white text-lg px-8 py-4 inline-flex items-center space-x-2 rounded-lg font-semibold transition-all duration-300"
+>
+  <Heart className="h-5 w-5" />
+  <span>Ver Todas as Opções de Doação</span>
+</Link>
         </div>
       </div>
     </section>

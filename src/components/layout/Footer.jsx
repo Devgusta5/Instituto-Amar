@@ -60,9 +60,9 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Como Ajudar</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/doacao" className="text-green-100 hover:text-white transition-colors">
-                  Fazer Doação
-                </Link>
+                <Link to="/doacao" className="text-green-100 hover:text-instituto-green transition-colors">
+  Fazer Doação
+</Link>
               </li>
               <li>
                 <Link to="/contato" className="text-green-100 hover:text-white transition-colors">
