@@ -69,19 +69,19 @@ export default function Contact() {
       icon: MapPin,
       title: "Endereço",
       details: ["Rua das Flores, 123", "Centro - Mongaguá - SP", "CEP: 11730-000"],
-      color: "text-instituto-pink",
+      color: "text-pink-600",
     },
     {
       icon: Phone,
       title: "Telefone",
       details: ["(13) 99999-9999", "WhatsApp disponível"],
-      color: "text-instituto-red",
+      color: "text-pink-600",
     },
     {
       icon: Mail,
       title: "E-mail",
-      details: ["contato@institutoamar.org.br", "Respondemos em até 24h"],
-      color: "text-instituto-gold",
+      details: ["contato@institutoamar.org.br", "Respondemos em até 72h"],
+      color: "text-pink-600",
     },
     {
       icon: Clock,
@@ -263,83 +263,68 @@ export default function Contact() {
     </div>
 
             {/* Map & Additional Info */}
-            <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.0783775024915!2d-46.69678542389731!3d-24.133885482876767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce29d9d09031b1%3A0xa407d6bffe84280c!2sInstituto%20(A)mar!5e0!3m2!1spt-BR!2sbr!4v1750785938971!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="100%"
-                style={{ border: 0, borderRadius: "1rem", minHeight: "300px" }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa Instituto Amar"
-              ></iframe>
-            </div>
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-3xl font-bold text-instituto-green mb-8">Nossa Localização</h2>
+                <div className="bg-gray-300 rounded-2xl h-96 flex items-center justify-center mb-6">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.0783775024915!2d-46.69678542389731!3d-24.133885482876767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce29d9d09031b1%3A0xa407d6bffe84280c!2sInstituto%20(A)mar!5e0!3m2!1spt-BR!2sbr!4v1750785938971!5m2!1spt-BR!2sbr"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0, borderRadius: "1rem", minHeight: "300px" }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Mapa Instituto Amar"
+                  ></iframe>
+                </div>
+              </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-2xl font-bold text-instituto-green mb-6">Outras Formas de Contato</h3>
-                <div className="space-y-4">
-                  <a
-                    href="https://wa.me/5513999999999"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"
-                  >
-                    <div className="bg-pink-500 rounded-full p-2">
+              <div className="bg-white rounded-2xl p-5 md:p-8 shadow-lg">
+                <h3 className="text-xl md:text-2xl font-bold text-instituto-green mb-4 md:mb-6">Outras Formas de Contato</h3>
+                <div className="space-y-3 md:space-y-4">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-3 p-3 md:p-4 bg-green-50 rounded-lg">
+                    <div className="bg-pink-500 rounded-full p-2 mb-2 sm:mb-0">
                       <MessageSquare className="h-5 w-5 text-white" />
                     </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">WhatsApp</p>
-                      <p className="text-sm text-gray-600">Resposta rápida via WhatsApp</p>
+                    <div className="flex-1">
+                      <p className="font-semibold text-gray-900 text-sm md:text-base">WhatsApp</p>
+                      <p className="text-xs md:text-sm text-gray-600">Fale conosco diretamente pelo WhatsApp para dúvidas rápidas ou doações de objetos.</p>
                     </div>
-                  </a>
+                    <a
+                      href="https://wa.me/5513999999999"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 sm:mt-0 ml-0 sm:ml-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-3 md:px-4 py-2 rounded-lg transition-colors text-xs md:text-sm"
+                    >
+                      Clique aqui para WhatsApp
+                    </a>
+                  </div>
 
-                  <a
-                    href="mailto:contato@institutoamar.org.br"
-                    className="flex items-center space-x-3 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
-                  >
-                    <div className="bg-blue-500 rounded-full p-2">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-3 p-3 md:p-4 bg-blue-50 rounded-lg">
+                    <div className="bg-blue-500 rounded-full p-2 mb-2 sm:mb-0">
                       <Mail className="h-5 w-5 text-white" />
                     </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">E-mail Direto</p>
-                      <p className="text-sm text-gray-600">contato@institutoamar.org.br</p>
+                    <div className="flex-1">
+                      <p className="font-semibold text-gray-900 text-sm md:text-base">E-mail Direto</p>
+                      <p className="text-xs md:text-sm text-gray-600">Prefere enviar um e-mail? Clique no botão ao lado para nos contatar.</p>
                     </div>
-                  </a>
+                    <a
+                      href="mailto:contato@institutoamar.org.br"
+                      className="mt-2 sm:mt-0 ml-0 sm:ml-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-3 md:px-4 py-2 rounded-lg transition-colors text-xs md:text-sm"
+                    >
+                      Clique aqui para E-mail
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="section-padding bg-instituto-green text-white">
-        <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold mb-6">Faça Parte da Nossa Família</h2>
-          <p className="text-xl text-pink-100 mb-8 max-w-3xl mx-auto">
-            Seja como voluntário, doador ou parceiro, há sempre uma forma de contribuir com nossa missão de transformar
-            vidas.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/doacao"
-              className="btn-accent inline-flex items-center space-x-2"
-            >
-              <Heart className="h-5 w-5" />
-              <span>Fazer Doação</span>
-            </a>
-            <a
-              href="https://wa.me/5513999999999?text=Olá! Gostaria de ser voluntário no Instituto Amar."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-white text-white hover:bg-white hover:text-instituto-green font-semibold py-3 px-6 rounded-lg transition-all duration-300 inline-flex items-center space-x-2"
-            >
-              <User className="h-5 w-5" />
-              <span>Ser Voluntário</span>
-            </a>
           </div>
         </div>
       </section>
+   
+
+      
     </div>
   )
 }

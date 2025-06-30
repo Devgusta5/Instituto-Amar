@@ -39,25 +39,25 @@ const Courses = () => {
 
             <div className="text-center">
               <div className="bg-instituto-red/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-instituto-red" />
+                <Users className="h-8 w-8 text-instituto-green" />
               </div>
-              <h3 className="text-lg font-bold text-instituto-red mb-2">Turmas Pequenas</h3>
+              <h3 className="text-lg font-bold text-instituto-green mb-2">Turmas Pequenas</h3>
               <p className="text-gray-600">Atendimento personalizado com turmas reduzidas para melhor aprendizado.</p>
             </div>
 
             <div className="text-center">
               <div className="bg-instituto-gold/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="h-8 w-8 text-instituto-gold" />
+                <BookOpen className="h-8 w-8 text-instituto-green" />
               </div>
-              <h3 className="text-lg font-bold text-instituto-gold mb-2">Material Incluso</h3>
+              <h3 className="text-lg font-bold text-instituto-green mb-2">Material Incluso</h3>
               <p className="text-gray-600">Todo material didático necessário é fornecido gratuitamente.</p>
             </div>
 
             <div className="text-center">
               <div className="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-pink-600" />
+                <Clock className="h-8 w-8 text-instituto-green" />
               </div>
-              <h3 className="text-lg font-bold text-pink-600 mb-2">Horários Flexíveis</h3>
+              <h3 className="text-lg font-bold text-instituto-green mb-2">Horários Flexíveis</h3>
               <p className="text-gray-600">Oferecemos diferentes horários para se adequar à sua rotina.</p>
             </div>
           </div>

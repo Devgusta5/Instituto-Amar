@@ -62,7 +62,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Link to="/doacao" className="btn-primary">
+            <Link to="/doacao2" className="btn-primary">
               Doe Agora
             </Link>
           </div>

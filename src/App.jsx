@@ -8,6 +8,7 @@ import EventDetail from "./pages/EventDetail"
 import Courses from "./pages/Courses"
 import CourseDetail from "./pages/CourseDetail"
 import Donation from "./pages/Donation"
+import Donation2 from "./pages/Donation2"
 import Gallery from "./pages/Gallery"
 import Contact from "./pages/Contact"
 import ScrollToTop from "./components/common/ScrollToTop"
@@ -26,6 +27,7 @@ function App() {
           <Route path="/cursos" element={<Courses />} />
           <Route path="/cursos/:id" element={<CourseDetail />} />
           <Route path="/doacao" element={<Donation />} />
+          <Route path="/doacao2" element={<Donation2 />} />
           <Route path="/galeria" element={<Gallery />} />
           <Route path="/contato" element={<Contact />} />
         </Routes>

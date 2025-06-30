@@ -24,7 +24,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center w-full">
           <Link
-            to="/doacao"
+            to="/doacao2"
             className="btn-primary text-lg px-8 py-4 flex items-center space-x-2 hover:bg-instituto-red transition-colors"
           >
             <Heart className="h-5 w-5" />

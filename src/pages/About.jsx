@@ -68,9 +68,9 @@ const About = () => {
 
             <div className="text-center">
               <div className="bg-instituto-red/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                <Eye className="h-10 w-10 text-instituto-red" />
+                <Eye className="h-10 w-10 text-instituto-green" />
               </div>
-              <h3 className="text-2xl font-bold text-instituto-red mb-4">Nossa Visão</h3>
+              <h3 className="text-2xl font-bold text-instituto-green mb-4">Nossa Visão</h3>
               <p className="text-gray-600 leading-relaxed">
                 Ser reconhecida como uma instituição de referência em transformação social, inspirando outras
                 organizações e comunidades a promoverem mudanças positivas em suas realidades.
@@ -79,9 +79,9 @@ const About = () => {
 
             <div className="text-center">
               <div className="bg-instituto-gold/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                <Heart className="h-10 w-10 text-instituto-gold" />
+                <Heart className="h-10 w-10 text-instituto-green" />
               </div>
-              <h3 className="text-2xl font-bold text-instituto-gold mb-4">Nossos Valores</h3>
+              <h3 className="text-2xl font-bold text-instituto-green mb-4">Nossos Valores</h3>
               <p className="text-gray-600 leading-relaxed">
                 Amor, transparência, compromisso, respeito à diversidade, sustentabilidade e excelência em tudo que
                 fazemos para transformar vidas e comunidades.
