@@ -12,7 +12,7 @@ const CourseDetail = () => {
       <div className="pt-20 section-padding">
         <div className="container-custom text-center">
           <h1 className="text-4xl font-bold text-gray-600 mb-4">Curso não encontrado</h1>
-          <Link to="/cursos" className="btn-primary">
+          <Link to="/cursos" className="btn-primary ">
             Voltar para Cursos
           </Link>
         </div>
@@ -24,30 +24,33 @@ const CourseDetail = () => {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative h-96 bg-gray-900 overflow-hidden">
-        <img
-          src={course.image || "/placeholder.svg"}
-          alt={course.title}
-          className="w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-          <div className="container-custom h-full flex items-end pb-12">
-            <div className="text-white">
-              <Link
-                to="/cursos"
-                className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors"
-              >
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Voltar para Cursos
-              </Link>
-              <div className="bg-instituto-gold text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
-                Curso Gratuito
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">{course.title}</h1>
-              <p className="text-xl text-white/90 max-w-2xl">{course.description}</p>
-            </div>
-          </div>
+  <img
+    src={course.image || "/placeholder.svg"}
+    alt={course.title}
+    className="w-full h-full object-cover opacity-60"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+    <div className="container-custom h-full flex flex-col justify-between pb-12 pt-8">
+      {/* Link "Voltar para Cursos" mais para cima */}
+      <div>
+        <Link
+          to="/cursos"
+          className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors"
+        >
+          <ArrowLeft className="h-4 w-4 mr-2" />
+          Voltar para Cursos
+        </Link>
+      </div>
+      <div className="text-white">
+        <div className="bg-instituto-green text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+          Curso Gratuito
         </div>
-      </section>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">{course.title}</h1>
+        <p className="text-xl text-white/90 max-w-2xl">{course.description}</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Course Details */}
       <section className="section-padding bg-white">

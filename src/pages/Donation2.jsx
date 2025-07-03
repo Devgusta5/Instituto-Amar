@@ -70,7 +70,7 @@ const Donation = () => {
 
   const impactData = [
     { icon: Users, amount: "R$ 25", impact: "Alimenta 5 crianças por um dia", color: "text-emerald-600" },
-    { icon: Gift, amount: "R$ 50", impact: "Material escolar para 2 crianças", color: "text-instituto-gold" },
+    { icon: Gift, amount: "R$ 50", impact: "Material escolar para 2 crianças", color: "text-instituto-green" },
     { icon: Target, amount: "R$ 100", impact: "Financia um curso completo", color: "text-instituto-red" },
   ]
 
@@ -289,10 +289,10 @@ const Donation = () => {
             {/* Bank Transfer Section */}
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-3xl p-8 border border-blue-100">
               <div className="flex items-center justify-center mb-8">
-                <div className="bg-instituto-red rounded-full p-4 mr-4">
+                <div className="bg-instituto-green rounded-full p-4 mr-4">
                   <CreditCard className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-3xl font-bold text-instituto-red">Transferência Bancária</h3>
+                <h3 className="text-3xl font-bold text-instituto-green">Transferência Bancária</h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -343,9 +343,9 @@ const Donation = () => {
               href="https://wa.me/5513999999999?text=Olá! Gostaria de fazer uma doação para o Instituto Amar."
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-instituto-gold hover:bg-yellow-600 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2 shadow-lg"
+              className="bg-instituto-gold hover:bg-green-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2 shadow-lg"
             >
-              <Heart className="h-6 w-6" />
+              <Heart className="h-6 w-6 " />
               <span>Falar no WhatsApp</span>
             </a>
             <a

@@ -83,17 +83,17 @@ const Navbar = () => {
               {/* Hamburger/X icon - 3 traços e X animado */}
               <span
                 className={`absolute left-1/2 top-1/2 w-8 h-1 bg-white rounded transition-all duration-300
-                  ${isOpen ? "rotate-45 -translate-x-1/2 -translate-y-1/2" : "-translate-x-1/2 -translate-y-3"}
+                  ${isOpen ? "rotate-45 -translate-x-1/2 -translate-y-1/2" : "-translate-x-1/2 -translate-y-2.5"}
                 `}
               />
               <span
                 className={`absolute left-1/2 top-1/2 w-8 h-1 bg-white rounded transition-all duration-300
-                  ${isOpen ? "opacity-0" : "-translate-x-1/2 -translate-y-1/2"}
+                  ${isOpen ? "opacity-0" : "-translate-x-1/2"}
                 `}
               />
               <span
                 className={`absolute left-1/2 top-1/2 w-8 h-1 bg-white rounded transition-all duration-300
-                  ${isOpen ? "-rotate-45 -translate-x-1/2 -translate-y-1/2" : "-translate-x-1/2 translate-y-3"}
+                  ${isOpen ? "-rotate-45 -translate-x-1/2 -translate-y-1/2" : "-translate-x-1/2 translate-y-2.5"}
                 `}
               />
             </button>
