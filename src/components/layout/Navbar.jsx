@@ -102,8 +102,8 @@ const Navbar = () => {
               {navItems.map((item, idx) => {
                 // Arco entre 120° (esquerda-cima) e 210° (esquerda-baixo), mais para a esquerda
                 const total = navItems.length
-                const start = (0 * Math.PI) / 5// 120 graus
-                const end = (4 * Math.PI) / 7.5 // 210 graus
+                const start = (-0.2 * Math.PI) / 5// 120 graus
+                const end = (2.8 * Math.PI) / 5.2 // 210 graus
                 const angle = start + (idx * (end - start) / (total - 1))
                 const radius = isOpen ? 185 : 0
                 const x = Math.cos(angle) * radius
