@@ -21,7 +21,7 @@ const CourseDetail = () => {
   }
 
   return (
-    <div className="pt-20">
+    <div className="pt-0">
       {/* Hero Section */}
       <section className="relative h-96 bg-gray-900 overflow-hidden">
   <img

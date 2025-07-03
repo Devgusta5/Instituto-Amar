@@ -94,7 +94,7 @@ export default function Contact() {
   
 
   return (
-    <div className="pt-20">
+    <div className="pt-0">
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-instituto-green to-green-800 text-white">
         <div className="container-custom">

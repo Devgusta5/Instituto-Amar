@@ -42,11 +42,11 @@ const Navbar = () => {
             {/* Ícone do coração rosa, sem quadrado */}
             <Heart className="h-6 w-6 text-instituto-green" fill="currentColor" />
             <span
-  className="text-xl font-bold text-instituto-green hidden md:inline"
-  style={{ fontFamily: "'Poppins', sans-serif" }}
-  >
-    Instituto Amar
-  </span>
+            className="text-xl font-bold text-instituto-green hidden md:inline"
+            style={{ fontFamily: "'Poppins', sans-serif" }}
+            >
+              Instituto Amar
+            </span>
           </Link>
 
           {/* Desktop Menu */}
