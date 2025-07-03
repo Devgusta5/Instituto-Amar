@@ -29,22 +29,24 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300
-        ${isOpen ? "bg-transparent" : "bg-transparent"}
-        ${(isScrolled ? " md:bg-white md:shadow-lg md:py-2" : " md:bg-white/95 md:backdrop-blur-sm md:py-4")}
-      `}
-    >
+  style={{ fontFamily: "'Poppins', sans-serif" }}
+  className={`fixed w-full z-50 transition-all duration-300
+    ${isOpen ? "bg-transparent" : "bg-transparent"}
+    ${(isScrolled ? " md:bg-white md:shadow-lg md:py-2" : " md:bg-white/95 md:backdrop-blur-sm md:py-4")}
+  `}
+>
       <div className="container-custom">
         <div className="flex justify-between items-center">
           {/* Logo flutuante sempre visível */}
           <Link to="/" className="flex items-center space-x-2 z-50">
-            <div className="bg-instituto-green p-2 rounded-lg">
-              <Heart className="h-6 w-6 text-white" />
-            </div>
-            <span className="text-xl font-bold text-instituto-green hidden md:inline">
-              {/* Só mostra o título em telas md+ */}
-              Instituto Amar
-            </span>
+            {/* Ícone do coração rosa, sem quadrado */}
+            <Heart className="h-6 w-6 text-instituto-green" fill="currentColor" />
+            <span
+  className="text-xl font-bold text-instituto-green hidden md:inline"
+  style={{ fontFamily: "'Poppins', sans-serif" }}
+  >
+    Instituto Amar
+  </span>
           </Link>
 
           {/* Desktop Menu */}
@@ -62,7 +64,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Link to="/doacao2" className="btn-primary">
+            <Link to="/doacao2" className="btn-primary rounded-full">
               Doe Agora
             </Link>
           </div>

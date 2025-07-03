@@ -3,14 +3,14 @@ import { Heart, MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide
 
 const Footer = () => {
   return (
-    <footer className="bg-instituto-green text-white">
+    <footer className="bg-instituto-green text-white" style={{ fontFamily: "'Poppins', sans-serif" }} >
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="space-y-4 flex flex-col items-start">
             <div className="flex items-center space-x-2">
-              <div className="bg-white p-2 rounded-lg">
-                <Heart className="h-6 w-6 text-instituto-green" />
+              <div className="flex items-center space-x-2">
+                <Heart className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold">Instituto Amar</span>
             </div>
